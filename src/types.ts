@@ -1,2 +1,2 @@
 export type VideoType = HTMLVideoElement | undefined
-export type FindParagraphInMiddleOfThePageType = HTMLElement | null;
+export type ParagraphType = HTMLElement | null;

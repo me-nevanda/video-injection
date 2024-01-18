@@ -13,10 +13,10 @@ export const videoProgressHandler = () => {
         const percentagePlayed = Math.ceil((currentTime / totalDuration) * 100);
 
         // needed for message "The video has played through"
-        const infoMessageMileStones = [25, 50, 75, 100];
+        const infoMessageMileStones:number[] = [25, 50, 75, 100];
 
         // needed for message "The video is played continuously"
-        const infoMessageTime = 2;
+        const infoMessageTime:number = 2;
 
         // The video is played continuously - message
         if (showStartTimeMessage && startTime + infoMessageTime <= currentTime) {

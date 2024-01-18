@@ -1,13 +1,13 @@
 import {setVideo} from "./videoService";
-import {FindParagraphInMiddleOfThePageType} from "./types";
+import {ParagraphType} from "./types";
 
-export const findParagraphInMiddleOfThePage = (): FindParagraphInMiddleOfThePageType => {
+export const findParagraphInMiddleOfThePage = (): ParagraphType => {
     // all paragraph
     const paragraphs = document.querySelectorAll('p');
     const fullPageHeight = document.body.scrollHeight;
 
     // initial values
-    let middleParagraph = null;
+    let middleParagraph:ParagraphType = null;
     let minDistanceFromMiddle = Infinity;
 
     // find middle paragraph
